@@ -24,7 +24,7 @@ public class CurrentPiece extends Piece {
 	public void render(Graphics g) {
 		for (int y = 0; y < coords.length; y++) {
 			for (int x = 0; x < coords[y].length; x++) {
-				if (coords[y][x] != 0)
+				if (coord_point(x, y)==true)
 					g.drawImage(block, x * Board.BLOCKSIZE + cX, y * Board.BLOCKSIZE + cY, null);
 
 			}
