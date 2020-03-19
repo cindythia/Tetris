@@ -57,5 +57,22 @@ public class Piece {
 	public void setcY(int cY) {
 		this.cY = cY;
 	}
-
+	public bool coord_point(int x, int y)
+	{
+		if(coords[y][x]!=0)	{
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	public int len(int n)
+	{
+		if (coords[n].length !=4 && coords[n].length !=2){
+			return 0;
+		}
+		else if (coords[n].length ==4){
+			return 1;
+		return -1;
+	}
 }
