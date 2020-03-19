@@ -14,12 +14,12 @@ public class NextPiece extends Piece {
 	public void render(Graphics g) {
 		for (int y = 0; y < coords.length; y++) {
 			for (int x = 0; x < coords[y].length; x++) {
-				if (coords[y][x] != 0 && coords[0].length != 4 && coords[0].length != 2)
+				if (coord_point(x, y)==true && len(0)==0)
 					g.drawImage(block, x * Board.BLOCKSIZE + 425, y * Board.BLOCKSIZE + 2 * board.getIndentY() - 5,
 							null);
-				else if (coords[y][x] != 0 && coords[0].length == 4)
+				else if (coord_point(x, y)==true && len(0)==1)
 					g.drawImage(block, x * Board.BLOCKSIZE + 415, y * Board.BLOCKSIZE + 2 * board.getIndentY(), null);
-				else if (coords[y][x] != 0)
+				else if (coord_point(x,y)==true)
 					g.drawImage(block, x * Board.BLOCKSIZE + 440, y * Board.BLOCKSIZE + 2 * board.getIndentY() - 5,
 							null);
 			}
