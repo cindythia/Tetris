@@ -10,24 +10,7 @@ public class HoldPiece extends Piece {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public bool coord_point(int x, int y)
-	{
-		if(coords[y][x]!=0)	{
-			return true;
-		}
-		else{
-			return false;
-		}
-	}
-	public int len(int n)
-	{
-		if (coords[n].length !=4 && coords[n].length !=2){
-			return 0;
-		}
-		else if (coords[n].length ==4){
-			return 1;
-		return -1;
-	}
+	
 	@Override
 	public void render(Graphics g) {
 		for (int y = 0; y < coords.length; y++) {
